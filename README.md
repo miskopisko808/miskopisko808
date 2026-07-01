@@ -371,7 +371,7 @@ def eval_metrics(cm, model_name=""):
     TP = cm[1,1]
     TN = cm[0,0]
     FP = cm[0,1]
-    FN = cm[1,1]
+    FN = cm[1,0]
 
     accuracy = (TP+TN)/(TP+TN+FP+FN)
     precision = TP/(TP+FP)
